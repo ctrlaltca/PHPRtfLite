@@ -266,7 +266,7 @@ class PHPRtfLite_Element
             $stream->write($this->_font->getContent());
         }
         if ($this->isEmptyParagraph() && !$this->_isRtfCode) {
-            $stream->write('\par');
+            //$stream->write('\par');
         }
         else {
             $stream->write($text);
